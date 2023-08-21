@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #1c1c1c;
+  }
+}
+
+@layer components {
+  button {
+    @apply transition-opacity;
+  }
+  button:hover {
+    @apply opacity-80;
+  }
+
+  a {
+    @apply transition-opacity;
+  }
+  a:hover {
+    @apply opacity-80;
+  }
+
+  /* gradients */
+  .bg-primary-gradient {
+    background: linear-gradient(180deg, #00d7f4 0%, #00b5ee 100%);
+  }
+
+  .bg-secondary-gradient {
+    background: linear-gradient(180deg, #fbff48 0%, #d6ef38 100%);
+  }
+
+  .bg-black-gradient {
+    background: linear-gradient(180deg, #555555 0%, #1c1c1c 100%);
+  }
+
+  .bg-discord-gradient {
+    background: linear-gradient(180deg, #7a84f3 0%, #5865f2 100%);
+  }
+
+  .bg-glow-gradient {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 204, 35, 0.1) 0%,
+      rgba(255, 204, 35, 0) 100%
+    );
+  }
+
+  /* shadows */
+  .light-shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .dark-shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* strokes */
+  .primary-stroke {
+    -webkit-text-stroke: 1px #00d7f4;
+  }
+
+  /* checkbox */
+  input[type="radio"],input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: #757575;
+    color: #00d7f4;
+  }
+
+  input[type="radio"],input[type="checkbox"]:checked {
+    background-color: #00d7f4;
+    color: #00d7f4;
+  }
+}
